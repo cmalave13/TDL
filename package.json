@@ -1,0 +1,71 @@
+{
+  "name": "pierresstore",
+  "version": "1.0.0",
+  "description": "A mock e-commerce store based off of Stardew Valley",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development concurrently \"nodemon server/server.js\" \"webpack serve --open\"",
+    "format": "prettier --write \"./client/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "lint": "eslint --fix \"./client/**/*.{js,jsx,ts,tsx,json}\"",
+    "start": "nodemon server/server.js --open",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esaldivar/PierresStore.git"
+  },
+  "author": "Eric Saldivar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esaldivar/PierresStore/issues"
+  },
+  "homepage": "https://github.com/esaldivar/PierresStore#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "connect-mongodb-session": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "install": "^0.13.0",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.3",
+    "nodemon": "^2.0.12",
+    "npm": "^7.20.1",
+    "pg": "^8.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "style-loader": "^3.2.1",
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
