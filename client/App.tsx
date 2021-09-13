@@ -15,7 +15,7 @@ export const App:React.FC = () => {
     return (
     <>
     <img src={IMAGE} alt="Pierre's Store" width="300"  />
-      <h1>Add Tasks Below</h1>
+    
       
     </>
   )
